@@ -1,0 +1,36 @@
+{
+  "author": "David Addison",
+  "authorEmail": "djaddison.vcs@gmail.com",
+  "description": "This plugin allows you to darken or brighten colors using LAB color space. This allows you to maintain the perceptual feel of a color when darkening or brightening it.",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "darken",
+      "identifier": "darken",
+      "script": "main.js",
+      "handler": "darken",
+      "shortcut": "command ctrl -"
+    },
+    {
+      "name": "brighten",
+      "identifier": "brighten",
+      "script": "main.js",
+      "handler": "brighten",
+      "shortcut": "command ctrl ="
+    }
+  ],
+  "menu": {
+    "title": "lab-color-shift",
+    "items": [
+      "darken",
+      "brighten"
+    ]
+  },
+  "version": "0.2.0",
+  "homepage": "https://github.com/djaddison/sketch-plugin-lab-color-shift",
+  "name": "sketch-plugin-lab-color-shift",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/djaddison/sketch-plugin-lab-color-shift/master/.appcast.xml"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "sketch-plugin-lab-color-shift",
+  "description": "This plugin allows you to darken or brighten colors using LAB color space. This allows you to maintain the perceptual feel of a color when darkening or brightening it.",
+  "version": "0.2.0",
+  "license": "Apache-2.0",
+  "author": "David Addison <djaddison.vcs@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djaddison/sketch-plugin-lab-color-shift.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djaddison/sketch-plugin-lab-color-shift/issues"
+  },
+  "homepage": "https://github.com/djaddison/sketch-plugin-lab-color-shift",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "sketch-plugin-lab-color-shift",
+    "manifest": "src/manifest.json",
+    "main": "sketch-plugin-lab-color-shift.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.7"
+  }
+}
